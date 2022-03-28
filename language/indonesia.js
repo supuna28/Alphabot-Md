@@ -1,52 +1,49 @@
 exports.private = () =>{
-	return`Fitur hanya bisa di gunakan di private chat`
+	return`ඉන්බොක්ස් විතරයි`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `⏳ රැදී සිටින්න~`
 }
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `✅ Done.`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `⚠️ දෝශයකි`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `⚠️ Link එකෙහි දෝශයකි`
 }
 exports.media = () => {
-    return `Silahkan pilih media yang ingin kamu download`
+    return `කරුණාකර ඔබට බාගත කිරීමට අවශ්‍ය මාධ්‍යය තෝරන්න`
 }
 exports.replyImg = (prefix, command) => {
-    return `Kirim/Reply Foto Dengan Caption ${prefix + command}`
+    return `රිප්ලයි කරන්න ${prefix + command}`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `මෙනුව පරික්ශා කරන්න${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `❎ Harap masukkan pesan yang ingin disampaikan!`
-}
+    return `❎ කරුණාකර ඔබට පැවසීමට අවශ්‍ය පණිවිඩය ඇතුළත් කරන්න!`
 
-exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner`
+    return `❎ බොසාට විතරයි`
 }
 
 exports.doneOwner = () => {
-    return `✅  ️Sudah selesai, Owner ~`
+    return `✅  ️ඕකෙ බොසා ~`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `👥  ගෲප් ඔන්ලි`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `🙅  ඇඩ්මින්ට පමනි!`
 }
 
 exports.nhFalse = () => {
@@ -56,11 +53,11 @@ exports.nhFalse = () => {
 exports.listBlock = (blockNumber) => {
     return `*── 「 HALL OF SHAME 」 ──*
     
-Total diblokir: *${blockNumber.length}* user\n`
+බ්ලොක් ලිස්ට්: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `❎ මම ඇඩ්මින් නොවෙ ❎`
 }
 
 exports.adminAlready = () => {
@@ -68,33 +65,29 @@ exports.adminAlready = () => {
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `බොට් ඇඩ්මින් නොවෙ! 🙏`
 }
 
 exports.received = (pushname) => {
     return `
-Halo ${pushname}!
-Terima kasih telah melapor, laporanmu akan kami segera terima.`
+Hey ${pushname}!.`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `වට්ස් ඇප් වෙත අප්ලෝඩ් කල හැකි සීමාව ඉක්මවා ගොස් ඇත!`
 }
 
 exports.notNum = (q) => {
-    return `"${q}", bukan angka!`
+    return `"${q}", 😒!`
 }
 exports.menunya = (salam, pushname, botname) =>{
-	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp. 
-Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
-lapor owner agar segera di perbaiki 🙏      
+	return`Hai ${pushname} 👋 හෙලො ${salam}
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Selamat ${salam} ${pushname}*
+    return `*හෙලොව් ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu Botkingdom :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -797,74 +790,32 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 
 exports.rules = (prefix) => {
     return `
-*── 「 RULES AND FAQ 」 ──*
-
-1. Jangan spam bot. 🙅
-Sanksi: *❎ WARN/SOFT BLOCK*
-
-2. Jangan telepon bot. ☎️
-Sanksi: *❎ SOFT BLOCK*
-
-3. Jangan mengeksploitasi bot.😖
-Sanksi: *PERMANENT BLOCK*
-
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
-
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
-
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
-
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
-
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
-
-
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
-
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
-
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
-😖🙏
+*── 「 RULES  」 ──*
+නැහ්
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`සාදරයෙන් පිලිගනිමු 🤗
 	
 ╭ 𝖭𝖺𝗆𝖺 :
 ├ 𝖴𝗆𝗎𝗋 :
 ├ 𝖦𝖾𝗇𝖽𝖾𝗋 :
 ├ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+╰❒ ~`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
+	return`බායි 🥴>.<
 Goodbye`
 }
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
-
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
+COMING SOON STAY SAFE
 `
 }
 exports.tos = (ownernomer) => {
     return `
 *-------「 DONATE 」 -------*
-
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
-
-Berapapun donasi kalian akan sangat berarti 👍
-
-Thanks!
-
-Contact person Owner:
-wa.me/${ownernomer}
+owner wa.me/94753943957
 
     `
 }
